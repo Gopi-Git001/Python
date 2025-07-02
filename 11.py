@@ -29,4 +29,5 @@ print(y[1:20:3])
 # reverse string
 print(x[::-1])
 
+print(y[1:20:3])
 
