@@ -15,5 +15,8 @@ mystring = 'gopiram'
 # mylist = [g+mystring[i].upper() if i%2== 0 else g+mystring[i].lower() for i in range(len(mystring))]
 # print(mylist)
 
-mylist = ''.join([mystring[i].upper() if i%2 == 0 else mystring[i].lower() for i in range(len(mystring))])
-print(mylist)
+# mylist = ''.join([mystring[i].upper() if i%2 == 0 else mystring[i].lower() for i in range(len(mystring))])
+# print(mylist)
+
+newlist = ''.join([j.upper() if i%2  ==0 else j.lower() for i,j in enumerate(mystring)])
+print(newlist)
