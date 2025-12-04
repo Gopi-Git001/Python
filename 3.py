@@ -1,0 +1,16 @@
+name = 'gopiram'
+
+NewName = ''
+
+for i in range(len(name)):
+    #print(i)
+    
+    if i%2 == 0:
+        NewName=NewName+name[i].upper()
+    else:
+        NewName=NewName+name[i].lower()
+    
+print(NewName)
+
+
+    
