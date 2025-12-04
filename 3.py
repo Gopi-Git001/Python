@@ -17,4 +17,11 @@ name = 'Hello world'
 
 print(name[-3])
 
-  
+another_list = ['Gopi']
+new = name.split()
+
+print(name.split())
+print(' '.join(new))
+
+
+
