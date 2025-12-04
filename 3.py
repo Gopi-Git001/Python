@@ -13,4 +13,8 @@ for i in range(len(name)):
 print(NewName)
 
 
-    
+name = 'Hello world' 
+
+print(name[-3])
+
+  
