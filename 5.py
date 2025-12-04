@@ -17,4 +17,4 @@ print(updated_list)
 
 # Difference from strings is only Mutation strings are Immutable things and List is Mutate thing 
 
-#Append and Pop functions 
+#Append ,remove and Pop functions 
