@@ -95,4 +95,18 @@ for i in range(26):
     player_two.add_cards(new_deck.deal_one())
 
 
-print(player_one.cards[7])
+# print(player_one.cards[7])
+
+
+game_on = True
+
+while game_on:
+    
+    if len(player_one.cards) == 0:
+        print('Player one unable to play the game!')
+        print('Player Two WINS!')
+        game_on = False
+        break
+    
+        
+        
