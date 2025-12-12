@@ -41,12 +41,57 @@ class Deck():
         
             
 
-my_card = Card('Hearts','Four') 
+# my_card = Card('Hearts','Four') 
 
-print(my_card.rank)
+# print(my_card.rank)
 
-print(my_card.suit)
+# print(my_card.suit)
 
-my_deck = Deck()
+# my_deck = Deck()
 
-print(my_deck.all_cards[0])
+# print(my_deck.all_cards[0])
+
+
+class Player():
+    
+    def __init__(self,name):
+        self.name = name 
+        
+        self.cards = []
+        
+    def add_cards(self,card):
+        
+        if type(card) == type([]):
+            
+            self.cards.extend(card)
+            
+        else:
+            
+            self.cards.append(card)
+            
+    def remove_one(self):
+        
+        return self.cards.pop()
+    
+
+    def __str__(self):
+
+            return f"{self.name} has {len(self.cards)} cards"
+
+
+player_one = Player('One')
+
+player_two = Player('Two')
+
+
+new_deck = Deck()
+
+new_deck.shuffle()
+
+
+for i in range(26):
+    
+    player_one.add_cards(new_deck.deal_one())
+    player_two.add_cards(new_deck.deal_one())
+
+
