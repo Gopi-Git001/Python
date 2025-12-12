@@ -148,9 +148,7 @@ while game_on:
                 print('player two wins')
                 game_on = False
                 break
-            
-            elif len(player_two.cards) < 5:
-                
+            elif len(player_two.cards) < 5:               
                 print('player two unable to declare war')
                 print('player one wins')
                 game_on = False
