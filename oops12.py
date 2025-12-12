@@ -35,5 +35,8 @@ class Deck():
         
         return self.all_cards.pop(0)
     
-    
-    
+
+my_card = Card('Hearts','Four') 
+
+print(my_card.rank)
+   
