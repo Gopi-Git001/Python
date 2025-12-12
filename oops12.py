@@ -114,5 +114,19 @@ while game_on:
         game_on = False
         break
         
+    
+    player_one_cards = []
+    
+    player_one_cards.append(player_one.add_cards(new_deck.deal_one()))
+    
+    player_two_cards = []
+    
+    player_two_cards.append(player_two.add_cards(new_deck.deal_one()))
+    
+    
+    
+       
+    
+           
         
     
