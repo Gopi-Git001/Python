@@ -137,7 +137,19 @@ while game_on:
             player_one.add_cards(player_one_cards)
             player_one.add_cards(player_two_cards)
             at_war = False
+        
+        else:
             
+            print('WAR')
+            
+            if len(player_one.cards) < 5:
+                
+                print('player one unable to declare war')
+                print('player two wins')
+                game_on = False
+                break
+            
+                
     
     
        
