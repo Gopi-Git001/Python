@@ -95,3 +95,4 @@ for i in range(26):
     player_two.add_cards(new_deck.deal_one())
 
 
+print(player_one.cards[7])
