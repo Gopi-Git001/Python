@@ -13,7 +13,7 @@ class Card():
         self.value = values[rank]
         
         
-    def __st__(self):
+    def __str__(self):
         
         return self.rank +' of '+self.suit
 
@@ -49,4 +49,4 @@ print(my_card.suit)
 
 my_deck = Deck()
 
-print(my_deck.all_cards[0].value)
+print(my_deck.all_cards[0])
