@@ -39,4 +39,6 @@ class Deck():
 my_card = Card('Hearts','Four') 
 
 print(my_card.rank)
-   
+
+print(my_card.suit)
+
