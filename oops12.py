@@ -44,4 +44,4 @@ print(my_card.suit)
 
 my_deck = Deck()
 
-print(my_deck.all_cards)
+print(my_deck.all_cards[0])
