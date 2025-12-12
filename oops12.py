@@ -10,6 +10,8 @@ class Card():
     def __init__(self,suit,rank):
         self.rank = rank
         self.suit = suit
+        self.value = values[rank]
+        
         
     def __st__(self):
         
@@ -35,6 +37,9 @@ class Deck():
         
         return self.all_cards.pop(0)
     
+    
+        
+            
 
 my_card = Card('Hearts','Four') 
 
@@ -44,4 +49,4 @@ print(my_card.suit)
 
 my_deck = Deck()
 
-print(my_deck.all_cards[0])
+print(my_deck.all_cards[0].value)
