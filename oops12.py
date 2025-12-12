@@ -108,5 +108,11 @@ while game_on:
         game_on = False
         break
     
+    if len(player_two.cards) == 0:        
+        print('Player two unable to play the game')
+        print('Player One WINS!')
+        game_on = False
+        break
         
         
+    
