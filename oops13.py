@@ -119,12 +119,17 @@ while game_on:
             
             if len(player_one.cards) < 5:
                 print("Player one has unable to declare war")
-                print("player Two wins")
-                
+                print("player Two wins")            
                 game_on = False
                 break
             
+            elif len(player_two.cards) < 5:
+                print('Player two has unable to play the Game')
+                print('Player One WINS')
+                game_on = False
+                break
             
+                
                 
                         
 
