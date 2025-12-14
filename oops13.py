@@ -12,4 +12,15 @@ class Card():
         
         self.suit = suit 
         
+        self.value = values[rank]
+        
+    def __str__(self):
+        return f" {self.rank} of {self.suit}"
+
+
+my_card = Card('Hearts','Two')
+
+print(my_card.rank)
+print(my_card)
+        
         
