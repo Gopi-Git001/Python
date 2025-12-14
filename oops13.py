@@ -22,18 +22,38 @@ class Deck():
     
     def __init__(self):
         
-        self.cards = []
+        self.all_cards = []
         
         for suit in suits :        
             for rank in ranks:
-                self.cards.append(Card(suit,rank))
+                self.all_cards.append(Card(suit,rank))
+                
+    
                 
     def deal_one(self):
         
         return self.cards.pop(0)
 
 
-                
+class Player():
+    
+    def __init__(self,name):
+        
+        self.name = name
+        self.cards = []
+        
+    def add_cards(self,cards):
+        
+        if type[cards] == type([]):
+            
+            self.cards.extend(cards) 
+            
+        else:
+            
+            self.cards.append(cards)
+            
+                   
+                   
                 
            
         
