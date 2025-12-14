@@ -73,4 +73,8 @@ def take_bet(chips):
             else:
                 break
                               
+def hit(deck,hand):
+        hand.add_cards(deck.deal_one())
+        hand.adjust_aces()
+        
         
