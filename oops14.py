@@ -108,3 +108,24 @@ def show_all(player,dealer):
     for card in player.cards:
         print(card)
 
+
+def player_busts(player,dealer,chips):
+    print('Player busts!')
+    print('Dealer wins')
+    chips.lose_bet()
+    
+def player_win(player,dealer,chips):
+    print("player wins")
+    chips.win_bet()
+    
+def dealer_win(player,dealer,chips):
+    print('Dealer wins')
+    chips.lose_bet()
+    
+def dealer_busts(player,dealer,chips):
+    print('Dealer busts')
+    chips.win_bet()
+    
+    
+def push(delaer,player):
+    print("Player and dealer tie! It's time to push")
