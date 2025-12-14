@@ -75,10 +75,26 @@ for i in range(26):
     player_one.add_cards(new_deck.deal_one())
     player_two.add_cards(new_deck.deal_one())
     
+
+game_on = True
+
+while game_on:
+    
+    if len(player_one.cards) == 0:
+        print("Player One has unabel to play the game")
+        print("Player Two WINS")
+        game_on = True
+        break
+    if len(player_two.cards) == 0:
+        print("Player two has unable to play the Game")
+        print("Player One WINS")
+        game_on = True
+        break
     
     
-                   
-                   
+            
+
+
                 
            
         
