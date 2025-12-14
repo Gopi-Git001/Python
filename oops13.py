@@ -64,13 +64,19 @@ class Player():
 
 player_one = Player('One')
 
-player_one = Player('Two')
+player_two = Player('Two')
 
 new_deck = Deck()
 
 new_deck.shuffle()
 
 
+for i in range(26):
+    player_one.add_cards(new_deck.deal_one())
+    player_two.add_cards(new_deck.deal_one())
+    
+    
+    
                    
                    
                 
