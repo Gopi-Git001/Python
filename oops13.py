@@ -35,7 +35,7 @@ class Deck():
                 
     def deal_one(self):
         
-        return self.cards.pop(0)
+        return self.all_cards.pop(0)
 
 
 class Player():
@@ -47,7 +47,7 @@ class Player():
         
     def add_cards(self,cards):
         
-        if type[cards] == type([]):
+        if type(cards) == type([]):
             
             self.cards.extend(cards) 
             
@@ -129,7 +129,13 @@ while game_on:
                 game_on = False
                 break
             
+            else:
                 
+                for i in range(5):
+                    player_one_cards.append(player_one.remove_one()) 
+                    player_two_cards.append(player_two.remove_one())
+                    
+                   
                 
                         
 
