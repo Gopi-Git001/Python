@@ -66,7 +66,11 @@ player_one = Player('One')
 
 player_one = Player('Two')
 
- 
+new_deck = Deck()
+
+new_deck.shuffle()
+
+
                    
                    
                 
