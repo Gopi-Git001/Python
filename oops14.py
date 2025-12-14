@@ -17,7 +17,6 @@ class Card():
 class Deck():
     
     def __init__(self):
-        
         self.all_cards = [ Card(suit,rank) for suit in suits for rank in ranks]
         
     def shuffle(self):
@@ -29,7 +28,6 @@ class Deck():
 class Hand():
     
     def __init__(self):
-        
         self.cards = []
         self.value = 0
         self.aces = 0
@@ -40,12 +38,9 @@ class Hand():
         
         if card.rank == 'Aces':
             self.aces +=1
-            
         
-    def adjust_aces(self) :
-        
+    def adjust_aces(self) :    
         while self.value >21 and self.aces:
-            
             self.value -=10 
             self.aces -= 1
             
@@ -53,18 +48,29 @@ class Hand():
         
 class Chips():
     
-    def __init__(self):
-        
+    def __init__(self):        
         self.total = 100
-        
         self.bet = 0
         
     def win_bet(self):
-        
         self.total +=self.bet
     
     def lose_bet(self):
-        
         self.total -= self.bet 
         
+
+def take_bet(chips):
+    
+    while True:
+        try :
+            chips.bet = int(input('How many chips would you like to bet : '))            
+        except:             
+            print('Please enter correct bet value ')
+            continue    
+        else:            
+            if chips.bet > chips.total :
+                    print("sorry your can't exceed total",chips.total)
+            else:
+                break
+                              
         
