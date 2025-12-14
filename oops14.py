@@ -3,8 +3,9 @@ ranks = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten',
 values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8, 'Nine':9, 'Ten':10, 'Jack':10,
          'Queen':10, 'King':10, 'Ace':11}
 
-
+playing = True
 import random
+
 class Card():
     
     def __init__(self,suit,rank):
@@ -80,10 +81,8 @@ def hit(deck,hand):
 def hit_or_stand(deck,hand):
     global playing
     
-    while playing:
-        
+    while playing:        
         x = input("would you like to hit or stand plaese enter h or s")
-        
         if x[0].lower() == 'h':
             hit(deck,hand)
         elif x[0].lower() == 's':
