@@ -59,6 +59,13 @@ class Player():
         
         return self.cards.pop()
     
+    
+
+
+player_one = Player('One')
+
+player_one = Player('Two')
+
  
                    
                    
