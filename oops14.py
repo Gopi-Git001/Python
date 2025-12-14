@@ -38,11 +38,33 @@ class Hand():
         self.cards.append(card)
         self.value += values[card.rank]
         
-        if self.aces:
+        if card.rank == 'Aces':
             self.aces +=1
             
         
-    def adjust_aces :
+    def adjust_aces(self) :
         
+        while self.value >21 and self.aces:
+            
+            self.value -=10 
+            self.aces -= 1
+            
+            
+        
+class Chips():
+    
+    def __init__(self):
+        
+        self.total = 100
+        
+        self.bet = 0
+        
+    def win_bet(self):
+        
+        self.total +=self.bet
+    
+    def lose_bet(self):
+        
+        self.total -= self.bet 
         
         
