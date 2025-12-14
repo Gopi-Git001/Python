@@ -92,3 +92,19 @@ def hit_or_stand(deck,hand):
             print('sorry, please try again')
             continue
         break
+def show_some(player,dealer):
+    
+    print("Dealer's hand")    
+    print(dealer.cards[1])
+    print('PLayer hand:')
+    for i in player.cards:
+        print(i)
+        
+def show_all(player,dealer):
+    print("dealer's hand:")
+    for card in dealer.cards:
+        print(card)
+    print("player's hand")
+    for card in player.cards:
+        print(card)
+
