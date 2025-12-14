@@ -18,9 +18,22 @@ class Card():
         return f" {self.rank} of {self.suit}"
 
 
-my_card = Card('Hearts','Two')
-
-print(my_card.rank)
-print(my_card)
+class Deck():
+    
+    def __init__(self):
         
+        self.cards = []
+        
+        for suit in suits :        
+            for rank in ranks:
+                self.cards.append(Card(suit,rank))
+                
+    def deal_one(self):
+        
+        return self.cards.pop(0)
+
+
+                
+                
+           
         
