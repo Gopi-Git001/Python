@@ -77,4 +77,19 @@ def hit(deck,hand):
         hand.add_cards(deck.deal_one())
         hand.adjust_aces()
         
+def hit_or_stand(deck,hand):
+    global playing
+    
+    while playing:
         
+        x = input("would you like to hit or stand plaese enter h or s")
+        
+        if x[0].lower() == 'h':
+            hit(deck,hand)
+        elif x[0].lower() == 's':
+            print('You are on the stand mode ')
+            playing = False
+        else:
+            print('sorry, please try again')
+            continue
+        break
