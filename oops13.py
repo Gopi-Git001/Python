@@ -108,8 +108,13 @@ while game_on:
             player_one.add_cards(player_two_cards)
             at_war = False
             
-        
+        elif player_one_cards[-1].value < player_two_cards[-1].value:            
+            player_two.add_cards(player_one_cards)
+            player_two.add_cards(player_two_cards)
+            at_war = False
             
+        
+                        
 
 
                 
