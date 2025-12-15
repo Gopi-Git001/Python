@@ -149,6 +149,19 @@ while True:
     take_bet(player_chips)
     
     
+    show_some(player_hand,dealer_hand)
+    
+    while playing:
+        
+        hit_or_stand(new_deck,player_hand)
+        show_some(player_hand,dealer_hand)
+        
+        if player_hand.value >21:
+            player_busts(player_hand,dealer_hand,player_chips)
+            break
+        
+        
+        
     
     
     
