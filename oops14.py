@@ -160,6 +160,16 @@ while True:
             player_busts(player_hand,dealer_hand,player_chips)
             break
         
+    if player_hand.value <=21:
+        
+        while dealer_hand.value < 17:
+            hit(new_deck,dealer_hand)
+            
+        if dealer_hand.value >21:
+            dealer_busts(dealer_hand,player_hand,player_chips)
+        
+        
+            
         
         
     
