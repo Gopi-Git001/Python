@@ -129,3 +129,14 @@ def dealer_busts(player,dealer,chips):
     
 def push(delaer,player):
     print("Player and dealer tie! It's time to push")
+    
+    
+
+while True:
+    
+    new_deck = Deck()
+    new_deck.shuffle()
+    
+    player_hand = Hand()
+    player_hand.add_cards(new_deck.deal_one())
+    player_hand.add_cards(new_deck.deal_one())
