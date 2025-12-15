@@ -37,7 +37,7 @@ class Hand():
         self.cards.append(card)
         self.value += values[card.rank]
         
-        if card.rank == 'Aces':
+        if card.rank == 'Ace':
             self.aces +=1
         
     def adjust_aces(self) :    
@@ -124,13 +124,11 @@ def dealer_win(player,dealer,chips):
     
 def dealer_busts(player,dealer,chips):
     print('Dealer busts')
-    chips.win_bet()
-    
+    chips.win_bet()    
     
 def push(delaer,player):
     print("Player and dealer tie! It's time to push")
-    
-    
+        
 
 while True:
     
@@ -164,6 +162,8 @@ while True:
         
         while dealer_hand.value < 17:
             hit(new_deck,dealer_hand)
+        
+        show_all(player_hand, dealer_hand)
             
         if dealer_hand.value >21:
             dealer_busts(dealer_hand,player_hand,player_chips)
