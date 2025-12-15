@@ -177,7 +177,11 @@ while True:
             push(player_hand,dealer_hand)
             
             
-            
+    new_game  = input('Would you like to play again y or n:')
+    
+    if new_game[0].lower()== 'y':
+        playing = True
+        
         
         
     
