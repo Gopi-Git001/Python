@@ -168,7 +168,15 @@ while True:
         if dealer_hand.value >21:
             dealer_busts(dealer_hand,player_hand,player_chips)
         
+        elif dealer_hand.value > player_hand.value:
+            dealer_win(player_hand,dealer_hand,player_chips)
         
+        elif dealer_hand.value < player_hand.value:
+            player_win(player_hand,dealer_hand,player_chips)
+        else:
+            push(player_hand,dealer_hand)
+            
+            
             
         
         
