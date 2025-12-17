@@ -35,5 +35,9 @@ class Deck():
         return self.all_cards.pop(0)
     
     
+class Hand():
+    
+    def __init__(self):
+        
         
         
