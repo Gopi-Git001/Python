@@ -106,5 +106,8 @@ def show_some(player,dealer):
     print('Player cards:')
     for card in player.cards:
         print(card)
+    print("Delaer card:")
+    print(dealer.cards[1])
+    
     
     
