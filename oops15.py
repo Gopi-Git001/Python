@@ -110,13 +110,19 @@ def show_some(player,dealer):
     print(dealer.cards[1])
     
 
-def show_all(player,dealer):
-    
+def show_all(player,dealer):   
     print('Player cards:')
     for card in player.cards:
         print(card)
     print('dealer cards:')
     for card in dealer.cards:
         print(card)
+        
+def player_busts(player,dealer,chips):
+    print('Player busts')
+    chips.lose_bet()
+    
+
+        
          
     
