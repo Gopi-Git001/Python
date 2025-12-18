@@ -98,4 +98,7 @@ def hit_stand(deck,hand):
             print('You are on the stand mode')
             playing - False
         else:
-            
+            print('You entered incorrect value please enter correctly')
+            continue
+        break
+    
