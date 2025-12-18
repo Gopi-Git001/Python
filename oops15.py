@@ -102,3 +102,9 @@ def hit_stand(deck,hand):
             continue
         break
     
+def show_some(player,dealer):
+    print('Player cards:')
+    for card in player.cards:
+        print(card)
+    
+    
