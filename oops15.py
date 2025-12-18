@@ -126,6 +126,9 @@ def player_wins(player,dealer,chips):
     print('Player wins')
     chips.win_bet()
     
+def dealer_busts(player,dealer,chips):
+    print('Dealer busts')
+    chips.win_bet()
 
         
          
