@@ -96,7 +96,7 @@ def show_some(player,dealer):
     
     print("Dealer's hand")    
     print(dealer.cards[1])
-    print('PLayer hand:')
+    print('Player hand:')
     for i in player.cards:
         print(i)
         
@@ -187,7 +187,6 @@ while True:
         break
     
     
-        
     
     
     
