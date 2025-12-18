@@ -80,6 +80,11 @@ def take_bet(chips):
                 print(" you can't exceed the total value " chips.total)
             else:
                 break
-        
+            
+def hit(deck,hand):
+    hand.add_cards(deck.deal_one())
+    hand.adjust_aces()
+    
+       
         
     
