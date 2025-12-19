@@ -152,6 +152,10 @@ while game_on:
     dealer_hand.add_cards(new_deck.deal_one())
     
     
+    chips = Chips()
+    
+    take_bet(chips)
+    
     
     
     
