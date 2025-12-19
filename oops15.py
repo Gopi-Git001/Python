@@ -139,12 +139,17 @@ game_on = True
 
 while game_on:
     
-    player_hand = Hand()
-    dealer_hand = Hand()
-    
     new_deck = Deck()
     
     new_deck.shuffle()
+    
+    player_hand = Hand()
+    player_hand.add_cards(new_deck.deal_one())
+    
+    dealer_hand = Hand()
+    
+    
+    
     
     
     
