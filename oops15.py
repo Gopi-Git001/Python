@@ -156,6 +156,8 @@ while game_on:
     
     take_bet(chips)
     
+    show_some(player_hand,dealer_hand)
+    
     
     
     
