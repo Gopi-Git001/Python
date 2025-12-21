@@ -175,7 +175,9 @@ while game_on:
                 
             show_all(player_hand,dealer_hand)
             
-        
+            if dealer_hand.value >21:
+                dealer_busts(player_hand,dealer_hand,chips)
+                               
         
         
         
