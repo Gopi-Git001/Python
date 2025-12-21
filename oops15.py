@@ -161,7 +161,12 @@ while game_on:
     
     while playing :
         
-    
+        hit_stand(new_deck,player_hand)
+        show_some(player_hand,dealer_hand)
+        
+        
+        
+        
     
     
     
