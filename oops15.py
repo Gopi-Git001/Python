@@ -168,6 +168,13 @@ while game_on:
             player_busts(player_hand,dealer_hand,chips)
             break
         
+        if player_hand.value <=21:
+            
+            while dealer_hand.value <17:
+                hit_stand(new_deck,dealer_hand)
+                
+            show_all(player_hand,dealer_hand)
+            
         
         
         
