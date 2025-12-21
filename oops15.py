@@ -164,6 +164,11 @@ while game_on:
         hit_stand(new_deck,player_hand)
         show_some(player_hand,dealer_hand)
         
+        if player_hand.value > 21:
+            player_busts(player_hand,dealer_hand,chips)
+            break
+        
+        
         
         
         
