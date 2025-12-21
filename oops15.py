@@ -178,7 +178,11 @@ while game_on:
             if dealer_hand.value >21:
                 dealer_busts(player_hand,dealer_hand,chips)
                                
-        
+            elif dealer_hand.value > player_hand.value:
+                print('Dealer wins')
+                dealer_wins(player_hand,dealer_hand)
+                
+            
         
         
     
