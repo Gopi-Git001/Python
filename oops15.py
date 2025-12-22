@@ -191,5 +191,11 @@ while game_on:
         
     new_game = input("would you like to play again yes or no ")
     
+    if new_game[0].lower() == 'y':
+        playing = True
+    else:
+        break
+    
+    
     
     
