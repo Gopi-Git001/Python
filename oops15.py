@@ -199,6 +199,10 @@ while game_on:
         playing = False
         break
     
+    else:
+        print("Hey you entered wrong character could you pelase enter yes or no")
+        continue
+    
     
     
     
