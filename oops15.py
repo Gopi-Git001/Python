@@ -189,7 +189,7 @@ while game_on:
             push(player_hand,dealer_hand)    
             
         
-        
+    new_game = input("would you like to play again yes or no ")
     
     
     
