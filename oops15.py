@@ -134,7 +134,7 @@ def dealer_busts(player,dealer,chips):
 def dealer_wins(player,dealer,chips):
     print('Dealer wins') 
     chips.lose_bet()
-          
+
          
 game_on = True
 
@@ -181,7 +181,10 @@ while game_on:
             elif dealer_hand.value > player_hand.value:
                 print('Dealer wins')
                 dealer_wins(player_hand,dealer_hand)
-                
+            elif dealer_hand.value < player_hand.value:
+                player_wins(player_hand,dealer_hand,chips)
+            else:
+                push()    
             
         
         
