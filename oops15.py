@@ -196,8 +196,7 @@ while game_on:
         continue    
     elif new_game[0].lower() == 'n':
         playing = False
-        break
-    
+        break    
     else:
         print("Hey you entered wrong character could you pelase enter yes or no")
         continue
