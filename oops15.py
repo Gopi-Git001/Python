@@ -195,7 +195,8 @@ while game_on:
         playing = True
         continue
     
-    else:
+    elif new_game[0].lower() == 'n':
+        playing = False
         break
     
     
