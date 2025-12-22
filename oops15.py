@@ -170,23 +170,23 @@ while game_on:
             player_busts(player_hand,dealer_hand,chips)
             break
         
-        if player_hand.value <=21:
+    if player_hand.value <=21:
             
-            while dealer_hand.value <17:
-                hit_stand(new_deck,dealer_hand)
+        while dealer_hand.value <17:
+            hit_stand(new_deck,dealer_hand)
                 
-            show_all(player_hand,dealer_hand)
+        show_all(player_hand,dealer_hand)
             
-            if dealer_hand.value >21:
-                dealer_busts(player_hand,dealer_hand,chips)
+        if dealer_hand.value >21:
+            dealer_busts(player_hand,dealer_hand,chips)
                                
-            elif dealer_hand.value > player_hand.value:
-                print('Dealer wins')
-                dealer_wins(player_hand,dealer_hand)
-            elif dealer_hand.value < player_hand.value:
-                player_wins(player_hand,dealer_hand,chips)
-            else:
-                push(player_hand,dealer_hand)    
+        elif dealer_hand.value > player_hand.value:
+            print('Dealer wins')
+            dealer_wins(player_hand,dealer_hand)
+        elif dealer_hand.value < player_hand.value:
+            player_wins(player_hand,dealer_hand,chips)
+        else:
+            push(player_hand,dealer_hand)    
             
         
         
