@@ -193,6 +193,8 @@ while game_on:
     
     if new_game[0].lower() == 'y':
         playing = True
+        continue
+    
     else:
         break
     
