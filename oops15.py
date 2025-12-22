@@ -186,7 +186,7 @@ while game_on:
             elif dealer_hand.value < player_hand.value:
                 player_wins(player_hand,dealer_hand,chips)
             else:
-                push()    
+                push(player_hand,dealer_hand)    
             
         
         
