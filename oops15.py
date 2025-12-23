@@ -97,7 +97,7 @@ def hit_stand(deck,hand):
             hit(deck,hand)
         elif x[0].lower() == 's':
             print('You are on the stand mode')
-            playing - False
+            playing = False
         else:
             print('You entered incorrect value please enter correctly')
             continue
