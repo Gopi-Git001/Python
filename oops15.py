@@ -173,7 +173,7 @@ while game_on:
     if player_hand.value <=21:
             
         while dealer_hand.value <17:
-            hit_stand(new_deck,dealer_hand)
+            hit(new_deck,dealer_hand)
                 
         show_all(player_hand,dealer_hand)
             
@@ -182,7 +182,7 @@ while game_on:
                                
         elif dealer_hand.value > player_hand.value:
             print('Dealer wins')
-            dealer_wins(player_hand,dealer_hand)
+            dealer_wins(player_hand,dealer_hand,chips)
         elif dealer_hand.value < player_hand.value:
             player_wins(player_hand,dealer_hand,chips)
         else:
