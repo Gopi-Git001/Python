@@ -195,6 +195,7 @@ while game_on:
         playing = True
         continue    
     elif new_game[0].lower() == 'n':
+        print("Thank you!")
         playing = False
         break    
     else:
