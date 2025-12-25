@@ -19,11 +19,12 @@ class Deck():
     
     def __init__(self):
         
-        self.cards = []
+        self.cards = [Card(suit,rank) for suit in suits for rank in ranks]
+
         
-        for suit in suits:
-            for rank in ranks :
-                self.cards.append(Card(suit,rank))
+        # for suit in suits:
+        #     for rank in ranks :
+        #         self.cards.append(Card(suit,rank))
                 
         
         
