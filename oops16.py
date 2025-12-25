@@ -15,25 +15,24 @@ class Card():
         return f" {self.rank} of {self.suit} cards "
     
 
+# card = Card("Hearts","one")
+# print(card)
+# print(card.rank)
+
 class Deck():
     
     def __init__(self):
         
         self.cards = [Card(suit,rank) for suit in suits for rank in ranks]
-
-        
         # for suit in suits:
         #     for rank in ranks :
-        #         self.cards.append(Card(suit,rank))
-                
+        #         self.cards.append(Card(suit,rank))                
         
     def deal_one(self):
-        
         return self.cards.pop(0)
            
-new_deck = Deck()
-
-print(new_deck.cards[-1])
+# new_deck = Deck()
+# print(new_deck.cards[-1])
 
 
         
