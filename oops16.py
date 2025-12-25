@@ -27,7 +27,10 @@ class Deck():
         #         self.cards.append(Card(suit,rank))
                 
         
+    def deal_one(self):
         
+        return self.cards.pop(0)
+           
 new_deck = Deck()
 
 print(new_deck.cards[-1])
