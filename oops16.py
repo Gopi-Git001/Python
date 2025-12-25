@@ -28,5 +28,9 @@ class Deck():
                 
         
         
-        
+new_deck = Deck()
+
+print(new_deck.cards[-1])
+
+
         
