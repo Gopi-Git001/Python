@@ -16,3 +16,5 @@ class Card():
     
 
 new_card = Card('Hearts','Two')
+
+print(new_card)
