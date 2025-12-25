@@ -15,6 +15,12 @@ class Card():
         return f" {self.rank} of {self.suit} cards "
     
 
-new_card = Card('Hearts','Two')
-
-print(new_card.rank)
+class Deck():
+    
+    def __init__(self):
+        
+        self.cards = []
+        
+        
+        
+        
