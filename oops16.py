@@ -21,6 +21,11 @@ class Deck():
         
         self.cards = []
         
+        for suit in suits:
+            for rank in ranks :
+                self.cards.append(Card(suit,rank))
+                
+        
         
         
         
