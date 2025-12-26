@@ -169,4 +169,14 @@ while game_on:
     dealer_hand.add_cards(new_deck.deal_one())
     dealer_hand.add_cards(new_deck.deal_one())
 
-    
+    chips = Chips()
+    take_bet(chips)
+
+    show_some(player_hand,dealer_hand)
+
+    while playing:
+
+        hit_stand(new_deck,player_hand)
+
+        show_some(player_hand,dealer_hand)
+        
