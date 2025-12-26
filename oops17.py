@@ -116,3 +116,17 @@ def hit_stand(deck,hand):
             continue
         break
 
+
+def show_some(player,dealer):
+    print("Player cards list:")
+    for card in player.cards:
+        print(card)
+    print("Dealer card :")
+
+def show_all(player,dealer):
+    print("player cards list:")
+    for card in player.cards:
+        print(card)
+    print("Dealer card list:")
+    for card in dealer.cards:
+        print(card)
