@@ -160,4 +160,7 @@ while game_on:
     new_deck = Deck()
     new_deck.shuffle()
 
+    player_hand = Hand()
+    player_hand.add_cards(new_deck.deal_one())
+    player_hand.add_cards(new_deck.deal_one())
     
