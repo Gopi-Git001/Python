@@ -150,4 +150,14 @@ def dealer_win(player,dealer,chips):
 
 def push(player,dealer):
     print("TIE Game It's time to PUSH")
+
+
+
+game_on = True
+
+while game_on:
+
+    new_deck = Deck()
+    new_deck.shuffle()
+
     
