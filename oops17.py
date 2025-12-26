@@ -58,3 +58,10 @@ class Hand():
         if self.aces == 'Ace':
             self.aces +=1
 
+    def adjust_aces(self):
+
+        while self.value >21 and self.aces:
+            self.value -=10
+            self.aces -=1
+
+            
