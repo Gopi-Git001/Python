@@ -13,6 +13,12 @@ class Card():
     def __str__(self):
         return f"{self.rank} of {self.suit} "
 
-my_cards = Card('Hearts','Two')
+# my_cards = Card('Hearts','Two')
 
-print(my_cards.rank)
+# print(my_cards.rank)
+
+# print(my_cards.suit)
+
+# print(my_cards)
+
+
