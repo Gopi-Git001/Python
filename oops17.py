@@ -26,5 +26,10 @@ class Deck():
     def __init__(self):
         self.all_cards = [Card(suit,rank) for suit in suits for rank in ranks ]
 
-        
+
+new_deck = Deck()
+
+print(new_deck.all_cards[1])
+
+
 
