@@ -22,3 +22,8 @@ class Card():
 # print(my_cards)
 
 
+class Deck():
+    def __init__(self):
+        self.all_cards = []
+
+        
