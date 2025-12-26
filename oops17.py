@@ -5,6 +5,8 @@ values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8,
 
 import random 
 
+playing = True
+
 class Card():
 
     def __init__(self,suit,rank):
@@ -91,3 +93,26 @@ def take_bet(chips):
                 print('You exceed the limit {chips.total}')
             else:
                 break
+
+def hit(deck,hand):
+    hand.add_cards(deck.deal_one())
+    hand.adjust_aces()
+
+def hit_stand(deck,hand):
+    global playing
+
+    while playing:
+
+        x = input('would you like to hit or stand please enter h or s')
+
+        if x[0].lower() == 'h':
+            print('Player selct hit mode')
+            hit(deck,hand)
+        elif x[0].lower()=='s':
+            print('Player on stand mode')
+            playing = False
+        else:
+            print('Please choose a correct value')
+            continue
+        break
+
