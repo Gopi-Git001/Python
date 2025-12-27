@@ -188,5 +188,12 @@ while game_on:
 
             while dealer_hand.value < 17:
                 hit(new_deck,dealer_hand)
-
             
+            show_all(player_hand,dealer_hand)
+            
+
+            if dealer_hand.value < player_hand.value:
+                print("Dealer Busts")
+                chips.win_bet()
+
+
