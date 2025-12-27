@@ -212,14 +212,25 @@ while game_on:
 
     new_game = input("would you like to play again y or n?:") 
 
+    # if new_game[0].lower() == 'y':
+    #     playing = True
+
+    # elif new_game[0].lower() == 'n':
+    #     playing = False
+    #     break
+    # else:
+    #     print('Please choose correct one')
+    #     continue
+
     if new_game[0].lower() == 'y':
         playing = True
-
-    elif new_game[0].lower() == 'n':
-        playing = False
-        break
-    else:
-        print('Please choose correct one')
         continue
+
+    else:
+
+        print("Thank you!")
+        break
+    
+
 
 
