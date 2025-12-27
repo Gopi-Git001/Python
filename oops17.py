@@ -212,4 +212,6 @@ while game_on:
     if new_game[0].lower() == 'y':
         game_on = True
 
-    elif new_game[0]
+    elif new_game[0].lower() == 'n':
+        game_on = False
+        
