@@ -214,4 +214,9 @@ while game_on:
 
     elif new_game[0].lower() == 'n':
         game_on = False
-        
+
+    else:
+        print('Please choose correct one')
+        continue
+
+
