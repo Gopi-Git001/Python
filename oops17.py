@@ -84,7 +84,7 @@ def take_bet(chips):
     while True:
 
         try:
-            chips.bet = input("How much would you like to bet (0 to 100) :")
+            chips.bet = int(input("How much would you like to bet (0 to 100) :"))
         except :
             print('You Entered wrong Value')
             continue        
