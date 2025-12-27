@@ -122,6 +122,7 @@ def show_some(player,dealer):
     for card in player.cards:
         print(card)
     print("Dealer card :")
+    print(dealer.cards[1])
 
 def show_all(player,dealer):
     print("player cards list:")
@@ -157,6 +158,8 @@ game_on = True
 
 while game_on:
 
+    chips = Chips()
+
     new_deck = Deck()
     new_deck.shuffle()
 
@@ -180,41 +183,41 @@ while game_on:
 
         show_some(player_hand,dealer_hand)
 
-        if player_hand.value >21:
-            player_busts(player_hand,dealer_hand,chips)
+        if player_hand.value > 21:
+            player_busts(player_hand, dealer_hand, chips)
             break
 
-        if player_hand.value < 21:
+    if player_hand.value < 21:
 
-            while dealer_hand.value < 17:
+        while dealer_hand.value < 17:
                 hit(new_deck,dealer_hand)
             
-            show_all(player_hand,dealer_hand)
+        show_all(player_hand,dealer_hand)
 
-            if dealer_hand.value > 21:
-                print("Dealer Lose Game")
-                dealer_bust(player_hand,dealer_hand,chips)
+        if dealer_hand.value > 21:
+            print("Dealer Lose Game")
+            dealer_bust(player_hand,dealer_hand,chips)
                 
 
-            elif dealer_hand.value < player_hand.value:
-                print("Dealer Busts")
-                player_win(player_hand,dealer_hand,chips)
+        elif dealer_hand.value < player_hand.value:
+            print("Dealer Busts")
+            player_win(player_hand,dealer_hand,chips)
 
-            elif dealer_hand.value > player_hand.value:
-                dealer_win(player_hand,dealer_hand,chips)
+        elif dealer_hand.value > player_hand.value:
+            dealer_win(player_hand,dealer_hand,chips)
 
-            else:
-                push(player_hand,dealer_hand)
+        else:
+            push(player_hand,dealer_hand)
 
 
     new_game = input("would you like to play again y or n?:") 
 
     if new_game[0].lower() == 'y':
-        game_on = True
+        playing = True
 
     elif new_game[0].lower() == 'n':
-        game_on = False
-
+        playing = False
+        break
     else:
         print('Please choose correct one')
         continue
