@@ -198,5 +198,8 @@ while game_on:
 
             elif dealer_hand.value < player_hand.value:
                 print("Dealer Busts")
-                
+                player_win(player_hand,dealer_hand,chips)
+
+            elif dealer_hand.value > player_hand.value:
+                dealer_win(player_hand)
 
