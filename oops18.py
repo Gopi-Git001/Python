@@ -41,7 +41,18 @@ class Hand():
         self.cards.append(card)
         self.value += values[card.rank]
         
+        if card.rank == 'ace':
+            self.aces +=1
+            
+    def adjust_aces(self):
+        while self.value >21 and self.aces :
+            self.value -= 10
+            self.aces -= 1
+            
 
+
+        
+            
       
 
         
