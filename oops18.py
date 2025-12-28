@@ -24,4 +24,10 @@ class Deck():
                 self.all_cards.append(Card(suit,rank))
                 
                 
+    def shuffle(self):
+        return random.shuffle(self.all_cards)
+    
+    def deal_one(self):
+        return self.all_cards.pop(0)
+    
     
