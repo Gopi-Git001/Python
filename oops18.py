@@ -30,6 +30,3 @@ class Deck():
     def deal_one(self):
         return self.all_cards.pop(0)
 
-new_deck = Deck()
-new_deck.shuffle()
-print(new_deck.all_cards[0])
