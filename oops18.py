@@ -15,10 +15,13 @@ class Card():
     def __str__(self):
         return f"{self.rank} of {self.suit}"
 
-new_card = Card('Hearts',"Two")
-
-print(new_card.rank)
-
-print(new_card.suit)
-
-print(new_card)
+class Deck():
+    def __init__(self):
+        self.all_cards = []
+        
+        for suit in suits:
+            for rank in ranks:
+                self.all_cards.append(Card(suit,rank))
+                
+                
+    
