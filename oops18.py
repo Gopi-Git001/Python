@@ -65,19 +65,15 @@ class Chips():
         
 def take_bet(chips):
     
-    while True:
-        
-        try :
-            
+    while True:    
+        try : 
             chips.bet = int(input("How much would you like to bet(0 to 100):"))
-            
         except:
             print("Hey you choose wrong value please choose between 0 to 100")
             continue
         else:
             if chips.bet > chips.total:
                 print("Hey you exhaust the total limit ", chips.total)
-                
             else:
                 break
             
