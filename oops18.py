@@ -29,4 +29,14 @@ class Deck():
     
     def deal_one(self):
         return self.all_cards.pop(0)
+    
 
+class Hand():
+    def __init__(self):
+        self.cards = []
+        self.value = 0
+        self.aces = 0
+        
+    def add_cards(self,card):
+        
+        
