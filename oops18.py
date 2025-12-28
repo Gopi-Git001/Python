@@ -38,5 +38,17 @@ class Hand():
         self.aces = 0
         
     def add_cards(self,card):
+        self.cards.append(card)
+        self.value += values[card.rank]
         
+new_deck = Deck()        
+new_hand = Hand()
+card1 = new_deck.deal_one()
+
+new_hand.add_cards(card1)
+
+print(card1)
+
+      
+
         
