@@ -77,8 +77,14 @@ def take_bet(chips):
             else:
                 break
             
-def hit(deck,player):
-    player.add_cards(deck.deal_one())
-    player.adjust_aces()
+def hit(deck,hand):
+    hand.add_cards(deck.deal_one())
+    hand.adjust_aces()
     
-     
+def hit_or_stand(deck,player):
+    
+    global playing
+    
+    while playing:
+        
+        
