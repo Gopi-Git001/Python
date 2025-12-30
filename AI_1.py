@@ -17,7 +17,7 @@ openai = OpenAI()
 messages = [{'role':"user","content":"Hi"}]
 
 response = openai.chat.completions.content(
-    model = "gpt-40-mini",
+    model = "gpt-4o-mini",
     messages = messages
 )
 
