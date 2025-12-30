@@ -20,8 +20,6 @@ response = openai.chat.completions.content(
     model = "gpt-4o-mini",
     messages = messages
 )
-
 answer = response.choices[0].message.content 
-
 print(answer)
 
