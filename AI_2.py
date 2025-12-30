@@ -12,7 +12,7 @@ prompt_1 = "Please propose a hard, challenging question to assess someone's IQ. 
 messages = [{'role':"user","content":prompt_1}]
 
 response = openai.chat.completions.content(
-    model = "gpt-40-mini",
+    model = "gpt-4o-mini",
     messages = messages
 )
 
@@ -24,7 +24,7 @@ print(question)
 messages = [{'role':'user','content':question}]
 
 response = openai.chat.completions.content(
-    model = 'gpt-40-mini',
+    model = 'gpt-4o-mini',
     messages = messages
     
 )
