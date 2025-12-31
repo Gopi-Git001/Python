@@ -13,3 +13,8 @@ openai = OpenAI()
 
 messages = [{'role':'user','content':'Hi! How are you?'}]
 
+response = openai.chat.complettions.content(
+    model = 'gpt-4o-mini',
+    messages = messages
+)
+
