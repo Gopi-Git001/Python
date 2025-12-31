@@ -18,3 +18,5 @@ response = openai.chat.complettions.content(
     messages = messages
 )
 
+answer = response.choices[0].message.content 
+
