@@ -9,7 +9,6 @@ from openai import OpenAI
 
 openai = OpenAI()
 
-
 messages = [{'role':'user','content':'Hi! How are you?'}]
 
 response = openai.chat.complettions.content(
