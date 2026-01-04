@@ -17,3 +17,5 @@ class Card():
 new_card = Card('Two','Hearts')
 new_rank =new_card.rank
 print(new_card)
+print(new_rank)
+
