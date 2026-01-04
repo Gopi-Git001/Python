@@ -19,3 +19,4 @@ new_rank =new_card.rank
 print(new_card)
 print(new_rank)
 
+print(new_card.suit)
