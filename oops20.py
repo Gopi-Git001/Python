@@ -14,9 +14,11 @@ class Card():
     def __str__(self):
         return f"{self.rank} of {self.suit}"
 
-new_card = Card('Two','Hearts')
-new_rank =new_card.rank
-print(new_card)
-print(new_rank)
 
-print(new_card.suit)
+
+class Deck():
+
+    def __init__(self):
+        self.all_cards = []
+
+        
