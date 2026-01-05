@@ -28,7 +28,6 @@ class Deck():
     
 class Hand():
     def __init__(self):
-        self.all_cards = 0
+        self.all_cards = []
         self.value = 0
         self.aces = 0
-            
