@@ -45,4 +45,7 @@ class Hand():
             self.aces -=1
     
 class Chips():
-    
+    def __init__(self):
+        self.total = 100
+        self.bet = 0
+        
