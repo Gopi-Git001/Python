@@ -57,4 +57,15 @@ class Chips():
 def take_bet(chips):
 
     while True:
-        
+        try:
+
+            chips.bet = input('How much would you like to bet ')
+
+        except:
+
+            print('You entered wrong details ')
+            continue
+        else:
+            if chips.bet > chips.total:
+                print('You entered value exceeds the total')
+                
