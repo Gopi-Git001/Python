@@ -22,10 +22,8 @@ class Deck():
         for suit in suits:
             for rank in ranks:
                 self.all_cards.append(Card(rank,suit))
-
     def shuffle(self):
-        return random.shuffle(self.all_cards)
-    
+        return random.shuffle(self.all_cards)  
     def deal_one(self):
         return self.all_cards.pop(0)
     
