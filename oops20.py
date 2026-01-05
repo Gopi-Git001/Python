@@ -31,3 +31,7 @@ class Hand():
         self.all_cards = []
         self.value = 0
         self.aces = 0
+
+    def add_cards(self,card):
+        self.all_cards.append(card)
+        
