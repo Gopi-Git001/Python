@@ -12,4 +12,4 @@ class Card():
         self.suit = suit
     
     def __str__(self):
-        return 
+        return f"{self.rank}"
