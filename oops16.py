@@ -34,5 +34,11 @@ class Deck():
 # new_deck = Deck()
 # print(new_deck.cards[-1])
 
-
+class Hand():
+    
+    def __init__(self):
+        self.all_cards = []
+        self.aces = 0
+        self.value = 0 
+        
         

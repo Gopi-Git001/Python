@@ -87,4 +87,3 @@ def hit_or_stand(deck,player):
     
     while playing:
         
-        

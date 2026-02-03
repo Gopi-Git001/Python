@@ -9,4 +9,11 @@ class Card():
         return self.rank +' of '+self.suit
 
 
+# class Deck():
     
+#     def __init__(self):
+        
+#         self.all_cards = [Card(suit,rank) for suit in suits for rank in ranks]
+        
+        
+        

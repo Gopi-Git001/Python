@@ -50,12 +50,13 @@ print(my_cat.number)
 
 print(my_cat.speak())
 
-
+#Polymorphism
 mylist = [my_animal,my_cat,my_dog]
 
 for i in mylist:
     
     print(i.speak())
+    
     
     
 
