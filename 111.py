@@ -5,3 +5,8 @@ print("hello welcome to our World")
 new_name = name.split()
 
 print(new_name)
+
+z = ' '.join(new_name)
+
+print(z)
+
