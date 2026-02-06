@@ -35,29 +35,41 @@
 # print(min(my_list))
 
 
-my_dict = {'key1':1,'key2':2,'key3':3}
+# my_dict = {'key1':1,'key2':2,'key3':3}
 
-print(my_dict['key1'])
+# print(my_dict['key1'])
 
-print(my_dict.keys())
-print(my_dict.items())
-print(my_dict.values())
+# print(my_dict.keys())
+# print(my_dict.items())
+# print(my_dict.values())
 
-for key in my_dict.items():
-    print(key)
+# for key in my_dict.items():
+#     print(key)
 
 
-list = [key for key in my_dict.items()]
-print(list)
+# list = [key for key in my_dict.items()]
+# print(list)
 
-print([i for i in my_dict.values()])
+# print([i for i in my_dict.values()])
 
-my_dict['key4'] = 4
+# my_dict['key4'] = 4
 
-print(my_dict)
+# print(my_dict)
 
-#Nested 
+# #Nested 
 
-my_new_dict = {'key1':{'key2':{'key3':3},'key4':2,'key5':3}}
+# my_new_dict = {'key1':{'key2':{'key3':3},'key4':2,'key5':3}}
 
-print(my_new_dict['key1']['key2']['key3'])
+# print(my_new_dict['key1']['key2']['key3'])
+
+tup = (1,2,3)
+
+print(tup[0])
+
+print(tup.index(1))
+
+name = 'GopiRam'
+
+for i in range(len(name)):
+    print(i)
+    
