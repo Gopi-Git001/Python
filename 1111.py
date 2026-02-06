@@ -79,3 +79,6 @@ for i in range(len(name)):
 
 print(new_name)
 
+myset = {1,2,4}
+myset.add(5)
+print(myset)
