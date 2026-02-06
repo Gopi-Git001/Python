@@ -55,3 +55,7 @@ print([i for i in my_dict.values()])
 my_dict['key4'] = 4
 
 print(my_dict)
+
+#Nested 
+
+my_new_dict = {'key1':{'key2':{'key3':3},'key2':2,'key3':3}}
