@@ -68,8 +68,14 @@ print(tup[0])
 
 print(tup.index(1))
 
-name = 'GopiRam'
-
+name = 'gopiram'
+new_name = '' 
 for i in range(len(name)):
-    print(i)
-    
+    if i%2 == 0:
+        
+        new_name += name[i].upper()
+    else :
+        new_name += name[i].lower()
+
+print(new_name)
+
