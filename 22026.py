@@ -1,13 +1,11 @@
-Name = 'Hello world'
-num = 1.4674
+mylist = [1,2,3,4,5,6,7,8,9]
 
+print(len(mylist))
 
-print('welocme {}'.format(Name))
+print(mylist[::])
 
+print(mylist[::2])
 
-print('The num is {n:1.2f}'.format(n =num))
-
-
-print(f'Hello {Name}')
+print(mylist[::-1])
 
 
