@@ -1,6 +1,13 @@
-x = 1
-for i in range(1,6):
-    #print(i)
-    x *=i
-    #print(i,x)
-print(x-20)
+Name = 'Hello world'
+num = 1.4674
+
+
+print('welocme {}'.format(Name))
+
+
+print('The num is {n:1.2f}'.format(n =num))
+
+
+print(f'Hello {Name}')
+
+
