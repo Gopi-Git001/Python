@@ -11,4 +11,5 @@ print(myfunc('gopiram'))
 def  myfunc_1(mylist):
     
     for i in mylist :
-        print(i)
+        if i %2 ==0:
+            
