@@ -7,3 +7,6 @@ def myfunc(name):
     return ''.join([char.upper() if i%2 ==0  else char.lower() for i ,char in enumerate(name)])
 print(myfunc('gopiram'))
 
+
+def  myfunc_1(mylist):
+    
