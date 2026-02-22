@@ -1,23 +1,9 @@
-work_hours = [("Abby",100),('Gopi',400),('Ram',2000)]
+mylist = [1,2,3,4,5,6,7,8,9]
 
-
-def employee_check(work_hours):
+print([i for i in mylist if i%2 ==0])
+def myfunc(name):
     
-    max_hours = 0
-    employee_of_month = ''
-    
-    for employee,hours in work_hours:
-        
-        if hours > max_hours :
-            
-            max_hours = hours
-            
-            employee_of_month = employee
-            
-        else :
-            pass
-        
-    return employee_of_month,max_hours
+    return ''.join([char.upper() if i%2 ==0  else char.lower() for i ,char in enumerate(name)])
 
-print(employee_check(work_hours))
+print(myfunc('gopiram'))
 
