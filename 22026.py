@@ -11,4 +11,4 @@ print(myfunc('gopiram'))
 def  myfunc_1(mylist):
     
     for i in mylist :
-    
+        print(i)
