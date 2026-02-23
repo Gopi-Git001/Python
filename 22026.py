@@ -15,4 +15,4 @@ def  myfunc_1(mylist):
             new_list.append(i)
         else:
             pass
-    return 
+    return new_list
