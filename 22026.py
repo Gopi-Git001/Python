@@ -14,7 +14,7 @@ def  myfunc_1(mylist):
         if i %2 ==0:
             new_list.append(i)
         else:
-            pass
+            print("odd")
     return new_list
 
 print(myfunc_1(mylist))
