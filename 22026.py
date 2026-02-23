@@ -17,5 +17,4 @@ def  myfunc_1(mylist):
             pass
     return new_list
 
-myfunc_1(mylist
-)
+myfunc_1(mylist)
