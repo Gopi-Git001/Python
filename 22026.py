@@ -16,3 +16,6 @@ def  myfunc_1(mylist):
         else:
             pass
     return new_list
+
+myfunc_1(
+)
