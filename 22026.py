@@ -13,4 +13,5 @@ def  myfunc_1(mylist):
     for i in mylist :
         if i %2 ==0:
             new_list.append(i)
+        else:
             
