@@ -23,4 +23,4 @@ def myfunc(mylist):
     for i in  len(mylist):
             print(i)
 
-
+myfunc
