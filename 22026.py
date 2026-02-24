@@ -21,7 +21,7 @@ print(myfunc_1(mylist))
 
 def myfunc(mylist):    
     for i in  range(len(mylist)):
-            print(i)
-            
+            print(i)            
             mylist.append(i+1)
+            print(mylist)
 myfunc(mylist)
