@@ -20,7 +20,7 @@ def  myfunc_1(mylist):
 print(myfunc_1(mylist))
 
 def myfunc(mylist):    
-    for i in  len(mylist):
+    for i in  range(len(mylist)):
             print(i)
 
 myfunc(mylist)
