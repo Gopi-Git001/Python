@@ -22,5 +22,4 @@ print(myfunc_1(mylist))
 def myfunc(mylist):    
     for i in  range(len(mylist)):
             print(i)
-
 myfunc(mylist)
